@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI组件之排序表格</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Table.css">
+    <!-- <script type="text/javascript" src="/javascripts/jquery.js"></script> -->
+    <!-- <script type="text/javascript" src="/javascripts/jqtest.js"></script> -->
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr id="add-tr">
+                <td colspan="6">
+                    <div id="add-div">
+                        <form style="font-size: 12px" action="/" method="post">
+                            姓名：<input placeholder="姓名" name="name">
+                            语文： <input placeholder="语文" name="ch">
+                            数学：<input placeholder="数学" name="ma">
+                            英语：<input placeholder="英语" name="en">
+                            <input type="submit" value="新增">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <button id="add-btn">添加成绩</button>
+                </td>
+            </tr>
+            <tr>
+                <td>姓名</td>
+                <td>语文<span class="upBtn"></span><span class="downBtn"></td>
+                <td>数学<span class="upBtn"></span><span class="downBtn"></td>
+                <td>英语<span class="upBtn"></span><span class="downBtn"></td>
+                <!-- <td>总分<span class="upBtn"></span><span class="downBtn"></td> -->
+                <td>功能</td>
+            </tr>
+        </thead>
+        <tbody id="showNextPage">
+            <% list.forEach((o,i)=> { %>
+                <tr>
+                    <td>
+                        <%=o.name %>
+                    </td>
+                    <td>
+                        <%=o.ch%>
+                    </td>
+                    <td>
+                        <%=o.ma%>
+                    </td>
+                    <td>
+                        <%=o.en%>
+                    </td>
+                    <!-- <td>
+                        <%=o.am%>
+                    </td> -->
+                    <td>
+                        <button data-id=<%=i%> class="mod-btn">修改</button>
+                        <button data-id=<%=i%> class="del-btn">删除</button>
+                    </td>
+                </tr>
+                <% }) %>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td colspan="6">
+                    <input type="button" value="下一页" id="nextPage" />
+                </td>
+            </tr>
+        </tfoot> -->
+    </table>
+    <script type="text/javascript" src="/javascripts/Table.js"></script>
+</body>
+
+</html>
