@@ -24,7 +24,7 @@ router.post('/', function (req, res, next) {
                 res.send('登录失败');
             }
             else {
-                res.render('main')
+                res.render('adminmain')
             }
         }
     });

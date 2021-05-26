@@ -15,7 +15,22 @@ var mainRouter = require('./routes/main');
 var cartRouter = require('./routes/cart');
 var adminsignRouter = require('./routes/adminsign');
 var shopRouter = require('./routes/shop');
-
+var billAddRouter = require('./routes/billAdd');
+var billUpdateRouter = require('./routes/billUpdate');
+var billListRouter = require('./routes/billList');
+var billViewRouter = require('./routes/billView');
+var providerAddRouter = require('./routes/providerAdd');
+var providerUpdateRouter = require('./routes/providerUpdate');
+var providerListRouter = require('./routes/providerList');
+var providerViewRouter = require('./routes/providerView');
+var userAddRouter = require('./routes/userAdd');
+var userUpdateRouter = require('./routes/userUpdate');
+var userListRouter = require('./routes/userList');
+var userViewRouter = require('./routes/userView');
+var adminmainRouter = require('./routes/adminmain');
+var publicRouter = require('./routes/public');
+var repasswordRouter = require('./routes/repassword');
+var reloginRouter = require('./routes/relogin');
 var app = express();
 
 // view engine setup
@@ -46,7 +61,22 @@ app.use('/main', mainRouter);
 app.use('/cart', cartRouter);
 app.use('/adminsign', adminsignRouter);
 app.use('/shop', shopRouter);
-
+app.use('/billAdd', billAddRouter);
+app.use('/billUpdate', billUpdateRouter);
+app.use('/billList', billListRouter);
+app.use('/billView', billViewRouter);
+app.use('/providerAdd', providerAddRouter);
+app.use('/providerUpdate', providerUpdateRouter);
+app.use('/providerList', providerListRouter);
+app.use('/providerView', providerViewRouter);
+app.use('/userAdd', userAddRouter);
+app.use('/userUpdate', userUpdateRouter);
+app.use('/userList', userListRouter);
+app.use('/userView', userViewRouter);
+app.use('/adminmain', adminmainRouter);
+app.use('/public', publicRouter);
+app.use('/repassword', repasswordRouter);
+app.use('/relogin', reloginRouter);
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));

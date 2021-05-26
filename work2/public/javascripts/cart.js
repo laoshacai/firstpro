@@ -281,52 +281,52 @@ function checkedAll() {
 }
 
 
-//结算提示
-count.addEventListener("click", () => {
-    var countp = prompt("确认支付", str + "元");
-    var usevalue = window.localStorage.getItem("username");
-    if (usevalue == null || usevalue.length <= 0) {
-        alert("请先登录，将跳转到登录界面");
-        window.location.assign("login.html");//跳转到下一个页面
-    } else {
-        if (countp) {
-            alert("支付成功");
-            fundelAll();
-        } else {
-            alert("支付失败");
-        }
-    }
+// //结算提示
+// count.addEventListener("click", () => {
+//     var countp = prompt("确认支付", str + "元");
+//     var usevalue = window.localStorage.getItem("username");
+//     if (usevalue == null || usevalue.length <= 0) {
+//         alert("请先登录，将跳转到登录界面");
+//         window.location.assign("login.html");//跳转到下一个页面
+//     } else {
+//         if (countp) {
+//             alert("支付成功");
+//             fundelAll();
+//         } else {
+//             alert("支付失败");
+//         }
+//     }
 
-});
+// });
 
 
-//更新缓存
-function changeValue(i) {
+// //更新缓存
+// function changeValue(i) {
 
-    let infor = {
-        "id": cartList[i].id,
-        "title": cartList[i].title,
-        "price": cartList[i].prices,
-        "num": cartList[i].num,
-        "check": 1,
-    };
-    setChange();
-}
+//     let infor = {
+//         "id": cartList[i].id,
+//         "title": cartList[i].title,
+//         "price": cartList[i].prices,
+//         "num": cartList[i].num,
+//         "check": 1,
+//     };
+//     setChange();
+// }
 
-function setChange() {
-    ncartList = JSON.stringify(cartList);
-    //修改，重新赋值                             
-    window.localStorage.setItem("cartlist", ncartList);
-}
+// function setChange() {
+//     ncartList = JSON.stringify(cartList);
+//     //修改，重新赋值                             
+//     window.localStorage.setItem("cartlist", ncartList);
+// }
 
-var usevalue = window.localStorage.getItem("username");
-if (usevalue == null || usevalue.length <= 0) {
-    var timerUser = setInterval(function () {
-        alert("请登录博汇商城，满足你的需求");
-    }, 36000);
-} else {
-    clearInterval(timerUser);
-}
+// var usevalue = window.localStorage.getItem("username");
+// if (usevalue == null || usevalue.length <= 0) {
+//     var timerUser = setInterval(function () {
+//         alert("请登录博汇商城，满足你的需求");
+//     }, 36000);
+// } else {
+//     clearInterval(timerUser);
+// }
 
 
 
