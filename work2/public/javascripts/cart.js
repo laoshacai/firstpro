@@ -281,87 +281,87 @@ function checkedAll() {
 }
 
 
-// //结算提示
-// count.addEventListener("click", () => {
-//     var countp = prompt("确认支付", str + "元");
-//     var usevalue = window.localStorage.getItem("username");
-//     if (usevalue == null || usevalue.length <= 0) {
-//         alert("请先登录，将跳转到登录界面");
-//         window.location.assign("login.html");//跳转到下一个页面
-//     } else {
-//         if (countp) {
-//             alert("支付成功");
-//             fundelAll();
-//         } else {
-//             alert("支付失败");
-//         }
-//     }
+//结算提示
+count.addEventListener("click", () => {
+    var countp = prompt("确认支付", str + "元");
+    var usevalue = window.localStorage.getItem("username");
+    if (usevalue == null || usevalue.length <= 0) {
+        alert("请先登录，将跳转到登录界面");
+        window.location.assign("login.html");//跳转到下一个页面
+    } else {
+        if (countp) {
+            alert("支付成功");
+            fundelAll();
+        } else {
+            alert("支付失败");
+        }
+    }
 
-// });
-
-
-// //更新缓存
-// function changeValue(i) {
-
-//     let infor = {
-//         "id": cartList[i].id,
-//         "title": cartList[i].title,
-//         "price": cartList[i].prices,
-//         "num": cartList[i].num,
-//         "check": 1,
-//     };
-//     setChange();
-// }
-
-// function setChange() {
-//     ncartList = JSON.stringify(cartList);
-//     //修改，重新赋值                             
-//     window.localStorage.setItem("cartlist", ncartList);
-// }
-
-// var usevalue = window.localStorage.getItem("username");
-// if (usevalue == null || usevalue.length <= 0) {
-//     var timerUser = setInterval(function () {
-//         alert("请登录博汇商城，满足你的需求");
-//     }, 36000);
-// } else {
-//     clearInterval(timerUser);
-// }
+});
 
 
+//更新缓存
+function changeValue(i) {
+
+    let infor = {
+        "id": cartList[i].id,
+        "title": cartList[i].title,
+        "price": cartList[i].prices,
+        "num": cartList[i].num,
+        "check": 1,
+    };
+    setChange();
+}
+
+function setChange() {
+    ncartList = JSON.stringify(cartList);
+    //修改，重新赋值                             
+    window.localStorage.setItem("cartlist", ncartList);
+}
+
+var usevalue = window.localStorage.getItem("username");
+if (usevalue == null || usevalue.length <= 0) {
+    var timerUser = setInterval(function () {
+        alert("请登录博汇商城，满足你的需求");
+    }, 36000);
+} else {
+    clearInterval(timerUser);
+}
 
 
 
 
 
-//解析地址，获取数据
-// var loc = location.href;
-// console.log(loc);
-// var n1 = loc.length;
-// var n2 = loc.indexOf("=");
-// var id = decodeURI(loc.substr(n2 + 1, n1 - n2));
-// id = id.split(",");
-// if (id.length > 1) {
-//     for (let i = 0; i < id.length; i++) {
-//         num[id[i]].value = "1";
-//         check[id[i]].checked = "checked";
-//     }
-// }
 
-//初始化-网页加载
-//拿缓存
-// var cartlist = ////.
-// [
-//     {id:5,title:"a",num:1,check:0},
-//     {id:6,title:"a",num:1,check:0},
-//     {id:7,title:"a",num:1,check:0}
-// ]
 
-// carlist = cartlist.filter((item)=>{
-//     if(item.id!=""){
-//         return true
-//     }
-// })
+// 解析地址，获取数据
+var loc = location.href;
+console.log(loc);
+var n1 = loc.length;
+var n2 = loc.indexOf("=");
+var id = decodeURI(loc.substr(n2 + 1, n1 - n2));
+id = id.split(",");
+if (id.length > 1) {
+    for (let i = 0; i < id.length; i++) {
+        num[id[i]].value = "1";
+        check[id[i]].checked = "checked";
+    }
+}
+
+初始化 - 网页加载
+拿缓存
+var cartlist = ////.
+    [
+        { id: 5, title: "a", num: 1, check: 0 },
+        { id: 6, title: "a", num: 1, check: 0 },
+        { id: 7, title: "a", num: 1, check: 0 }
+    ]
+
+carlist = cartlist.filter((item) => {
+    if (item.id != "") {
+        return true
+    }
+})
 
 
 //判断缓存
