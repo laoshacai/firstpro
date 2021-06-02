@@ -44,7 +44,7 @@ router.post('/', (req, res) => {
                 res.send('登录失败');
             }
             else {
-                res.render('main')
+                res.redirect('main')
             }
         }
     });

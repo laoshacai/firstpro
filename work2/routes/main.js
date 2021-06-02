@@ -19,6 +19,7 @@ router.get('/', function (req, res, next) {
         } else { res.render('main', { data: result }); }
     });
 });
+
 router.post('/', (req, res) => {
     var sql = 'select * from presale where title=? or detail=?';
     connection.query(sql, [req.body.sear, req.body.sear], function (err, result, fields) {
