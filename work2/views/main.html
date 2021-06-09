@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>博汇</title>
+    <title>博汇购物</title>
     <link href="/stylesheets/idx.css" rel="stylesheet">
     <link href="http://at.alicdn.com/t/font_1524886_uvkjm364bi.css" rel="stylesheet">
     <link href="/stylesheets/pbli.css" rel="stylesheet">
@@ -192,216 +192,241 @@
                     </div>
                 </li>
                 <% } %>
+        </ul>
 
-
-                    <!-- 商品列表 -->
-                    <div>
-                        <div class="main-tit">—— <b>商品列表</b>——</div>
-                        <ul class="wrap shopwrap">
-                            <li class="main">
-                                <a href="shop.html"><img src="/images/phone1.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">【超级爆品】一加 OnePlus 7 Pro 2K+90Hz 流体屏 骁龙855旗舰 4800万超广角三摄
-                                        8GB+256GB
-                                        星雾蓝全面屏拍照游戏手机</div>
-                                    <div class="detail-price"><b class="price">￥3899.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
+        <!-- 商品列表 -->
+        <div>
+            <div class="main-tit">—— <b>商品列表</b>——</div>
+            <ul class="wrap shopwrap">
+                <!-- <% for(var next of data){ %>
+                                <li class="main">
+                                    <a href="#"><img src="<%=next.image%>"></a>
+                                    <div class="main-detail">
+                                        <div class="detail-title">
+                                            <p>
+                                                <%=next.pone%>
+                                            </p>
+                                            <p>
+                                                <%=next.ptwo%>
+                                            </p>
+                                            <p>
+                                                <%=next.pthree%>
+                                            </p>
+                                        </div>
+                                        <div class="detail-price"><b class="price">
+                                                <%=next.price%>
+                                            </b class="price">
+                                            <div class="detail-car">
+                                                <%=next.add%>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone2.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">荣耀V20 游戏手机 麒麟980芯片 魅眼全视屏 4800万深感相机 6GB+128GB 魅丽红
-                                        移动联通电信4G全面屏手机</div>
-                                    <div class="detail-price"><b class="price">¥1899.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone3.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">【Apple iPhone 11 (A2223) 128GB 黑色 移动联通电信4G手机 双卡双待</div>
-                                    <div class="detail-price"><b class="price">¥5999.00</b>
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone4.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+64GB 铃兰白 移动联通电信4G全面屏手机 双卡双待
-                                    </div>
-                                    <div class="detail-price"><b class="price">¥899.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone5.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">荣耀9X 麒麟810 4000mAh续航 4800万超清夜拍 6.59英寸升降全面屏 全网通6GB+64GB 魅海蓝
-                                    </div>
-                                    <div class="detail-price"><b class="price">¥1299.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone6.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title"> 荣耀20 李现同款 4800万超广角AI四摄 3200W美颜自拍 麒麟Kirin980全网通版8GB+128GB
-                                        幻夜黑 全面屏手机
-                                    </div>
-                                    <div class="detail-price"><b class="price">¥2099.00</b>
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone7.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">华为 HUAWEI Mate 30 5G 麒麟990
-                                        4000万超感光徕卡影像双超级快充8GB+256GB亮黑色5G全网通手机</div>
-                                    <div class="detail-price"><b class="price">¥5499.00</b>
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone8.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">华为 HUAWEI Mate 30 Pro 5G 麒麟990
-                                        OLED环幕屏双4000万徕卡电影四摄8GB+256GB青山黛5G全网通手机
-                                    </div>
-                                    <div class="detail-price"><b class="price">¥6899.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone9.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">【新品抢购】Redmi 8A 5000mAh大电量 大字体大音量大内存 骁龙八核处理器 AI人脸解锁 莱茵护眼全面屏
-                                        4GB+64GB耀夜黑
-                                        游戏智能老人手机 小米 红米</div>
-                                    <div class="detail-price"><b class="price">¥699.00</b class="price">
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main"><a href="shop.html"><img src="/images/phone10.jpg"></a>
-                                <div class="main-detail">
-                                    <div class="detail-title">小米CC9e 索尼4800万旗舰相机 3200万美颜自拍 4030mAh 屏幕指纹 白色恋人 6GB+64GB
-                                        游戏智能拍照手机</div>
-                                    <div class="detail-price"><b class="price">¥1001.00</b>
-                                        <div class="detail-car">加入购物车</div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <!-- 页脚 -->
-                    <div class="main-tit">—— <b>END </b>——</div>
-                    <footer>
-
-                        <ul class="footer-top">
-                            <li>
-                                <div class="iconfont icon-wuyoushouhou"></div>
-                                <div class="footer-top-tit">
-                                    <div><a href="shop.html">正品保障</a></div>
-                                    <div>正品保障、提供发票</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="iconfont icon-yunliankeji_gongyinglianfuben"></div>
-                                <div class="footer-top-tit">
-                                    <div><a href="shop.html">急速物流</a></div>
-                                    <div>如约送货、送货入户</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="iconfont icon-shouhouwuyou"></div>
-                                <div class="footer-top-tit">
-                                    <div><a href="shop.html">售后无忧</a></div>
-                                    <div>30天包退、365天包换</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="iconfont icon-tesefuwu"></div>
-                                <div class="footer-top-tit">
-                                    <div><a href="shop.html">特色服务</a></div>
-                                    <div>私人订制家电套餐</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="iconfont icon-bangzhuzhongxin1"></div>
-                                <div class="footer-top-tit">
-                                    <div><a href="shop.html">帮助中心</a></div>
-                                    <div>你的购物指南</div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="footer-bottom">
-                            <li>
-                                <div class="footer-bottom-tit">购物指南</div>
-                                <ul>
-                                    <li><a href="shop.html">保障范围</a></li>
-                                    <li><a href="shop.html">购物流程</a></li>
-                                    <li><a href="shop.html">会员介绍</a></li>
-                                    <li><a href="shop.html">生活旅行</a></li>
-                                    <li><a href="shop.html">常见问题</a></li>
-                                    <li><a href="shop.html">联系客服购物指南</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="footer-bottom-tit">特色服务</div>
-                                <ul>
-                                    <li><a href="shop.html">保障范围</a></li>
-                                    <li><a href="shop.html">购物流程</a></li>
-                                    <li><a href="shop.html">会员介绍</a></li>
-                                    <li><a href="shop.html">生活旅行</a></li>
-                                    <li><a href="shop.html">常见问题</a></li>
-                                    <li><a href="shop.html">联系客服购物指南</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="footer-bottom-tit">帮助中心</div>
-                                <ul>
-                                    <li><a href="shop.html">保障范围</a></li>
-                                    <li><a href="shop.html">购物流程</a></li>
-                                    <li><a href="shop.html">会员介绍</a></li>
-                                    <li><a href="shop.html">生活旅行</a></li>
-                                    <li><a href="shop.html">常见问题</a></li>
-                                    <li><a href="shop.html">联系客服购物指南</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="footer-bottom-tit">新手指导</div>
-                                <ul>
-                                    <li><a href="shop.html">保障范围</a></li>
-                                    <li><a href="shop.html">购物流程</a></li>
-                                    <li><a href="shop.html">会员介绍</a></li>
-                                    <li><a href="shop.html">生活旅行</a></li>
-                                    <li><a href="shop.html">常见问题</a></li>
-                                    <li><a href="shop.html">联系客服购物指南</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="footer-copy">
-                            Copyright ©2020 版权所有@博汇商城 XXX<br>
-                            本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告” （包装及参数、售后保障等商品信息除外）<br>
-                            流量统计
+                                </li> -->
+                <!-- <% } %> -->
+                <li class="main">
+                    <a href="shop.html"><img src="/images/phone1.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">【超级爆品】一加 OnePlus 7 Pro 2K+90Hz 流体屏 骁龙855旗舰 4800万超广角三摄
+                            8GB+256GB
+                            星雾蓝全面屏拍照游戏手机</div>
+                        <div class="detail-price"><b class="price">￥3899.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
                         </div>
-                    </footer>
-                    <script src="/javascripts/swiper.mn.js"></script>
-                    <script src="/javascripts/idx.js"></script>
-                    <style>
-                        .copyrights {
-                            text-indent: -9999px;
-                            height: 0;
-                            line-height: 0;
-                            font-size: 0;
-                            overflow: hidden;
-                        }
-                    </style>
-                    <div class="copyrights" id="links20210126">
-                        Collect from <a href="http://www.cssmoban.com/" title="网站模板">模板之家</a>
-                        <a href="https://www.chazidian.com/" title="查字典">查字典</a>
                     </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone2.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">荣耀V20 游戏手机 麒麟980芯片 魅眼全视屏 4800万深感相机 6GB+128GB 魅丽红
+                            移动联通电信4G全面屏手机</div>
+                        <div class="detail-price"><b class="price">¥1899.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone3.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">【Apple iPhone 11 (A2223) 128GB 黑色 移动联通电信4G手机 双卡双待</div>
+                        <div class="detail-price"><b class="price">¥5999.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone4.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">荣耀10青春版 幻彩渐变 2400万AI自拍 全网通版6GB+64GB 铃兰白 移动联通电信4G全面屏手机 双卡双待
+                        </div>
+                        <div class="detail-price"><b class="price">¥899.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone5.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">荣耀9X 麒麟810 4000mAh续航 4800万超清夜拍 6.59英寸升降全面屏 全网通6GB+64GB 魅海蓝
+                        </div>
+                        <div class="detail-price"><b class="price">¥1299.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone6.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title"> 荣耀20 李现同款 4800万超广角AI四摄 3200W美颜自拍 麒麟Kirin980全网通版8GB+128GB
+                            幻夜黑 全面屏手机
+                        </div>
+                        <div class="detail-price"><b class="price">¥2099.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone7.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">华为 HUAWEI Mate 30 5G 麒麟990
+                            4000万超感光徕卡影像双超级快充8GB+256GB亮黑色5G全网通手机</div>
+                        <div class="detail-price"><b class="price">¥5499.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone8.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">华为 HUAWEI Mate 30 Pro 5G 麒麟990
+                            OLED环幕屏双4000万徕卡电影四摄8GB+256GB青山黛5G全网通手机
+                        </div>
+                        <div class="detail-price"><b class="price">¥6899.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone9.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">【新品抢购】Redmi 8A 5000mAh大电量 大字体大音量大内存 骁龙八核处理器 AI人脸解锁 莱茵护眼全面屏
+                            4GB+64GB耀夜黑
+                            游戏智能老人手机 小米 红米</div>
+                        <div class="detail-price"><b class="price">¥699.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone10.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">小米CC9e 索尼4800万旗舰相机 3200万美颜自拍 4030mAh 屏幕指纹 白色恋人 6GB+64GB
+                            游戏智能拍照手机</div>
+                        <div class="detail-price"><b class="price">¥1001.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- 页脚 -->
+        <div class="main-tit">—— <b>END </b>——</div>
+        <footer>
+
+            <ul class="footer-top">
+                <li>
+                    <div class="iconfont icon-wuyoushouhou"></div>
+                    <div class="footer-top-tit">
+                        <div><a href="shop.html">正品保障</a></div>
+                        <div>正品保障、提供发票</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconfont icon-yunliankeji_gongyinglianfuben"></div>
+                    <div class="footer-top-tit">
+                        <div><a href="shop.html">急速物流</a></div>
+                        <div>如约送货、送货入户</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconfont icon-shouhouwuyou"></div>
+                    <div class="footer-top-tit">
+                        <div><a href="shop.html">售后无忧</a></div>
+                        <div>30天包退、365天包换</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconfont icon-tesefuwu"></div>
+                    <div class="footer-top-tit">
+                        <div><a href="shop.html">特色服务</a></div>
+                        <div>私人订制家电套餐</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="iconfont icon-bangzhuzhongxin1"></div>
+                    <div class="footer-top-tit">
+                        <div><a href="shop.html">帮助中心</a></div>
+                        <div>你的购物指南</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="footer-bottom">
+                <li>
+                    <div class="footer-bottom-tit">购物指南</div>
+                    <ul>
+                        <li><a href="shop.html">保障范围</a></li>
+                        <li><a href="shop.html">购物流程</a></li>
+                        <li><a href="shop.html">会员介绍</a></li>
+                        <li><a href="shop.html">生活旅行</a></li>
+                        <li><a href="shop.html">常见问题</a></li>
+                        <li><a href="shop.html">联系客服购物指南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer-bottom-tit">特色服务</div>
+                    <ul>
+                        <li><a href="shop.html">保障范围</a></li>
+                        <li><a href="shop.html">购物流程</a></li>
+                        <li><a href="shop.html">会员介绍</a></li>
+                        <li><a href="shop.html">生活旅行</a></li>
+                        <li><a href="shop.html">常见问题</a></li>
+                        <li><a href="shop.html">联系客服购物指南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer-bottom-tit">帮助中心</div>
+                    <ul>
+                        <li><a href="shop.html">保障范围</a></li>
+                        <li><a href="shop.html">购物流程</a></li>
+                        <li><a href="shop.html">会员介绍</a></li>
+                        <li><a href="shop.html">生活旅行</a></li>
+                        <li><a href="shop.html">常见问题</a></li>
+                        <li><a href="shop.html">联系客服购物指南</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer-bottom-tit">新手指导</div>
+                    <ul>
+                        <li><a href="shop.html">保障范围</a></li>
+                        <li><a href="shop.html">购物流程</a></li>
+                        <li><a href="shop.html">会员介绍</a></li>
+                        <li><a href="shop.html">生活旅行</a></li>
+                        <li><a href="shop.html">常见问题</a></li>
+                        <li><a href="shop.html">联系客服购物指南</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-copy">
+                Copyright ©2020 版权所有@博汇商城 XXX<br>
+                本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告” （包装及参数、售后保障等商品信息除外）<br>
+                流量统计
+            </div>
+        </footer>
+        <script src="/javascripts/swiper.mn.js"></script>
+        <script src="/javascripts/idx.js"></script>
+        <style>
+            .copyrights {
+                text-indent: -9999px;
+                height: 0;
+                line-height: 0;
+                font-size: 0;
+                overflow: hidden;
+            }
+        </style>
+        <div class="copyrights" id="links20210126">
+            Collect from <a href="http://www.cssmoban.com/" title="网站模板">模板之家</a>
+            <a href="https://www.chazidian.com/" title="查字典">查字典</a>
+        </div>
 </body>

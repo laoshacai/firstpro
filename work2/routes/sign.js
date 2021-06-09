@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
     // console.log(req.body.loginPhone);
     // console.log(req.body.loginPassword);
 
-    var selectSQL = "select phone,password from goin where phone = '" + req.body.loginPhone + "' and password = " + req.body.loginPassword + "";
+    var selectSQL = "select phone,password from goin where phone = '" + req.body.loginPhone + "' and password = '" + req.body.loginPassword + "'";
     connection.query(selectSQL, function (err, result, fields) {
         if (err) {
             console.log('err', err);

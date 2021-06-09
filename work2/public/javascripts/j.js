@@ -63,3 +63,31 @@ Array.from(document.getElementsByClassName("mod-btn")).forEach(i => {
         window.location.href = '/billUpdate/' + idx;
     }
 })
+//管理员删除点击事件
+Array.from(document.getElementsByClassName("del-btng")).forEach(i => {
+    i.onclick = function () {
+        let idx = this.getAttribute("data-id");
+        window.location.href = '/providerList/' + idx;
+    }
+})
+//管理员修改按扭点击事件
+Array.from(document.getElementsByClassName("mod-btng")).forEach(i => {
+    i.onclick = function () {
+        let idx = this.getAttribute("data-id");
+        window.location.href = '/providerUpdate/' + idx;
+    }
+})
+//用户删除点击事件
+Array.from(document.getElementsByClassName("del-btnu")).forEach(i => {
+    i.onclick = function () {
+        let idx = this.getAttribute("data-id");
+        window.location.href = '/userList/' + idx;
+    }
+})
+//用户修改按扭点击事件
+Array.from(document.getElementsByClassName("mod-btnu")).forEach(i => {
+    i.onclick = function () {
+        let idx = this.getAttribute("data-id");
+        window.location.href = '/userUpdate/' + idx;
+    }
+})

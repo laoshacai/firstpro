@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
     res.render('adminsign');
 });
 router.post('/', function (req, res, next) {
-    var selectSQL = "select ad_phone,ad_password from admin_goin where ad_phone = '" + req.body.adminPhone + "' and ad_password = " + req.body.adminPassword + "";
+    var selectSQL = "select ad_phone,ad_password from admin_goin where ad_phone = '" + req.body.adminPhone + "' and ad_password = '" + req.body.adminPassword + "'";
     connection.query(selectSQL, function (err, result, fields) {
         if (err) {
             console.log('err', err);

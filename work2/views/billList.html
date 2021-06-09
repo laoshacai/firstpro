@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>超市账单管理系统</title>
+    <title>购物商城管理系统</title>
     <link rel="stylesheet" href="/stylesheets/publ.css" />
     <link rel="stylesheet" href="/stylesheets/stle.css" />
     <style>
@@ -36,16 +36,15 @@
 <body>
     <!--头部-->
     <header class="publicHeader">
-        <h1>超市账单管理系统</h1>
+        <h1>购物商城管理系统</h1>
         <div class="publicHeaderR">
-            <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+            <p><span></span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
             <a href="relogin">退出</a>
         </div>
     </header>
     <!--时间-->
     <section class="publicTime">
         <span id="time">2020年1月1日 11:11 星期一</span>
-        <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
     </section>
     <!--主体内容-->
     <section class="publicMian ">
@@ -54,10 +53,10 @@
             <nav>
                 <ul class="list">
                     <li id="active"><a href="billList">商品管理</a></li>
-                    <li><a href="providerList">供应商管理</a></li>
+                    <li><a href="providerList">管理员管理</a></li>
                     <li><a href="userList">用户管理</a></li>
-                    <li><a href="repassword">密码修改</a></li>
-                    <li><a href="relogin">退出系统</a></li>
+                    <!-- <li><a href="repassword">密码修改</a></li> -->
+                    <li><a href="relogin">退出后台</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,7 +68,7 @@
             <!-- 从此处开始 -->
             <div class="search">
                 <form action="/billList" method="post">
-                    <span>商品名称：</span>
+                    <span>商品查询：</span>
                     <input type="text" name="searone" placeholder="请输入商品信息" />
 
                     <!-- <span>商品详情：</span>
@@ -78,7 +77,7 @@
                     <input type="submit" value="查询" />
                 </form>
                 <!-- 换为submit用form表单 -->
-                <a href="billAdd">添加订单</a>
+                <a href="billAdd">添加商品</a>
             </div>
             <!--账单表格 样式和供应商公用-->
             <!-- <form action="/billList" method="post"> -->

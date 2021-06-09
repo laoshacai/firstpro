@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
     // res.redirect('http://www.baidu.com');
     // 跳转到百度
 
-    var find = "select phone,password from goin where phone = '" + req.body.phone + "' and password = " + req.body.password + "";
+    var find = "select phone,password from goin where phone = '" + req.body.phone + "' and password = '" + req.body.password + "'";
     var insertSql = 'insert into goin(phone,password) values(?,?)';
     connection.query(find, function (err, result, fields) {
         if (err) {

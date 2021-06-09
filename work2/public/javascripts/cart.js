@@ -283,18 +283,19 @@ function checkedAll() {
 
 //结算提示
 count.addEventListener("click", () => {
-    var countp = prompt("确认支付", str + "元");
+    // var countp = prompt("确认支付", str + "元");
     var usevalue = window.localStorage.getItem("username");
     if (usevalue == null || usevalue.length <= 0) {
-        alert("请先登录，将跳转到登录界面");
-        window.location.assign("login.html");//跳转到下一个页面
-    } else {
-        if (countp) {
-            alert("支付成功");
-            fundelAll();
-        } else {
-            alert("支付失败");
-        }
+        // alert("请先登录，将跳转到登录界面");
+        // window.location.assign("adminsign");
+        //跳转到下一个页面
+        // } else {
+        //     if (countp) {
+        //         alert("支付成功");
+        //         fundelAll();
+        //     } else {
+        //         alert("支付失败");
+        // }
     }
 
 });
@@ -323,15 +324,10 @@ var usevalue = window.localStorage.getItem("username");
 if (usevalue == null || usevalue.length <= 0) {
     var timerUser = setInterval(function () {
         alert("请登录博汇商城，满足你的需求");
-    }, 36000);
+    }, 36000000);
 } else {
     clearInterval(timerUser);
 }
-
-
-
-
-
 
 
 // 解析地址，获取数据

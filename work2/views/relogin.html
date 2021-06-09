@@ -3,7 +3,7 @@
 
 <head lang="en">
     <meta charset="UTF-8">
-    <title>系统登录 - 超市账单管理系统</title>
+    <title>退出管理系统</title>
     <link rel="stylesheet" href="/stylesheets/publ.css" />
     <link rel="stylesheet" href="/stylesheets/stle.css" />
 </head>
@@ -11,21 +11,21 @@
 <body class="login_bg">
     <section class="loginBox">
         <header class="loginHeader">
-            <h1>超市账单管理系统</h1>
+            <h1>购物商城退出管理</h1>
         </header>
         <section class="loginCont">
-            <form class="loginForm" action="welcome.html">
+            <form class="loginForm" action="/relogin" method="POST">
                 <div class="inputbox">
-                    <label for="user">用户名：</label>
-                    <input id="user" type="text" name="username" placeholder="请输入用户名" required />
+                    <label for="user">帐号：</label>
+                    <input id="user" type="text" name="username" placeholder="请输入管理员帐号" required />
                 </div>
                 <div class="inputbox">
                     <label for="mima">密码：</label>
-                    <input id="mima" type="password" name="password" placeholder="请输入密码" required />
+                    <input id="mima" type="password" name="password" placeholder="请输入管理员密码" required />
                 </div>
                 <div class="subBtn">
-                    <input type="submit" value="登录" />
-                    <input type="reset" value="重置" />
+                    <input type="submit" value="退出" />
+                    <!-- <input type="reset" value="重置" /> -->
                 </div>
 
             </form>
