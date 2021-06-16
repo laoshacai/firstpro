@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
     // 跳转到百度
 
     var find = "select phone,password from goin where phone = '" + req.body.phone + "' and password = '" + req.body.password + "'";
-    var insertSql = 'insert into goin(phone,password) values(?,?)';
+    var insertSql = 'insert into goin(phone,password,create_time) values(?,?,?)';
     connection.query(find, function (err, result, fields) {
         if (err) {
             console.log('err', err);
@@ -40,20 +40,10 @@ router.post('/', (req, res) => {
         } else if (result.length > 0) {
             res.send('用户帐号或密码已存在')
         } else {
-            connection.query(insertSql, [req.body.phone, req.body.password], function (err, result, fields) {
+            connection.query(insertSql, [req.body.phone, req.body.password, new Date()], function (err, result, fields) {
                 res.redirect('/sign');
             });
         }
     });
-    // connection.query(insertSql, [req.body.phone, req.body.password], function (err, result, fields) {
-    //     if (err) {
-    //         console.log('err', err);
-    //         return;
-    //     } else {
-    //         // return res.redirect('/sign');
-    //         res.redirect('/sign');
-    //     }
-    // });
-
 });
 module.exports = router;

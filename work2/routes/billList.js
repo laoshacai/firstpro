@@ -16,7 +16,7 @@ router.get('/', function (req, res, next) {
     var sql = 'select * from presale order by id desc';
     connection.query(sql, function (err, result, fields) {
         var pager = {};
-        // 当前默认第一页
+        // 页码数
         pager.pagerCurrent = pageNum || 1;
         //总的记录条数
         pager.maxNum = result.length;
@@ -24,7 +24,7 @@ router.get('/', function (req, res, next) {
         pager.pageSize = 5;
         //总共页数
         pager.pageCount = parseInt(Math.ceil(pager.maxNum / pager.pageSize));
-
+        //Math.ceil()向上取整，slice()提取相应位置的一段数据
         var resultList = result.slice((pager.pagerCurrent - 1) * pager.pageSize, (pager.pagerCurrent - 1) * pager.pageSize + pager.pageSize);
 
         if (err) {

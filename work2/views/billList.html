@@ -133,6 +133,8 @@
                                 <li><a href="/billList?page=<%=parseInt(pager.pagerCurrent-1)%>">上一页</a></li>
                                 <%}%>
 
+
+
                                     <li class="active"><a href="/billList?page=<%=pager.pagerCurrent%>">
                                             <%=pager.pagerCurrent%>
                                         </a></li>
@@ -142,6 +144,7 @@
                                                     <%=parseInt(pager.pagerCurrent+i)%>
                                                 </a></li>
                                             <%}}%>
+
 
 
                                                 <%if(pager.pagerCurrent==pager.pageCount){%>

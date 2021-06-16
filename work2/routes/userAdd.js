@@ -13,14 +13,18 @@ router.get('/', function (req, res, next) {
     res.render('userAdd');
 });
 router.post('/', function (req, res, next) {
-    var insql = 'insert into goin(phone,password,create_time) values(?,?,?)';
-    connection.query(insql, [req.body.billId, req.body.billName, new Date()], function (err, result, fields) {
+    var find = "select phone,password from goin where phone = '" + req.body.billId + "' and password = '" + req.body.billName + "'";
+    var insertSql = 'insert into goin(phone,password,create_time) values(?,?,?)';
+    connection.query(find, function (err, result, fields) {
         if (err) {
             console.log('err', err);
             return;
+        } else if (result.length > 0) {
+            res.send('用户帐号或密码已存在')
         } else {
-            res.render('userList', { list: result });
-            res.redirect('/userList');
+            connection.query(insertSql, [req.body.billId, req.body.billName, new Date()], function (err, result, fields) {
+                res.redirect('/userList');
+            });
         }
     });
 });
