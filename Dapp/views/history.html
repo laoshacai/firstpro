@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>历史订单</title>
+    <link href="/stylesheets/history.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header"></div>
+    <div class="wrap">
+        <ul class="top">
+            <li><input type="checkbox" class="checall">全选</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>总计</li>
+            <li>编辑</li>
+        </ul>
+        <ul class="main">
+        </ul>
+
+        <div class="footer">
+            <div class="footer-check">
+                <div><input type="checkbox" class="checall">全选</div>
+                <div class="delall">删除选中的订单</div>
+                <div>共<b class="goods">0</b>件订单</div>
+                <div>已选择<b class="goodsnum">0</b>件</div>
+            </div>
+
+            <div class="footer-count">
+                <div>
+                    <div class="price" id="money">￥0.00</div>
+                </div>
+                <div id="firm"><button>确认收货</button></div>
+                <div id="refund"><a>申请退款</a></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/javascripts/web3.min.js"></script>
+    <script src="/javascripts/djquery.js"></script>
+    <script src="/javascripts/whistory.js"></script>
+    <script src="/javascripts/history.js"></script>
+</body>
+
+</html>

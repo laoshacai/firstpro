@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PC聊天</title>
+    <link href="/stylesheets/adchat.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="top-left">
+                <div class="header"></div>
+                <div class="search">
+                    <!-- <input type="text"> -->
+                    <i class="icon-sear"></i>
+                </div>
+            </div>
+            <div class="top-type">
+                <a href="#" class="news icon-site"></a>
+                <a href="#" class="friend icon-site"></a>
+                <a href="#" class="file icon-site"></a>
+            </div>
+            <div class="top-right">
+                <i class="ic-menu ic-same"></i>
+                <i class="ic-shrink ic-same"></i>
+                <i class="ic-boost ic-same"></i>
+                <i class="ic-close ic-same"></i>
+            </div>
+        </div>
+        <div class="box">
+            <!-- <div class="chat-list">
+
+                </div> -->
+            <div class="box-right">
+                <div class="recvfrom">
+                    <div class="nav-top">
+                        <p>客户服务
+                        </p>
+                    </div>
+                    <div class="news-top">
+                        <ul>
+                            <% for(var list of data){ %>
+                                <!-- <li class="self">
+                                    <div class="avatar"><img src="../static/img/img-header2.jpg" alt=""></div>
+                                    <div class="msg">
+
+                                        <p class="msg-text">
+                                            <%=list.admintxt%>
+                                                <emoji class="pizza"></emoji>
+                                        </p>
+
+
+                                    </div>
+                                </li> -->
+
+                                <li class="other">
+                                    <div class="avatar"><img src="/images/微信图片.png" alt=""></div>
+                                    <div class="msg">
+                                        <!-- <p class="msg-name">咨询号</p> -->
+
+                                        <p class="msg-text">
+                                            <%=list.usertxt%>
+
+                                                <emoji class="pizza">
+                                                </emoji>
+                                        </p>
+
+                                    </div>
+                                </li>
+                                <% } %>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sendto">
+                    <!-- <div class="but-nav">
+                        <ul>
+                            <li class="font"></li>
+                            <li class="face"></li>
+                            <li class="cut"></li>
+                            <li class="page"></li>
+                            <li class="old"></li>
+                        </ul>
+                    </div> -->
+                    <div class="but-text">
+                        <form action="/adchat" method="POST">
+                            <textarea name="admintxt" id="" cols="110" rows="6"></textarea>
+                            <input type="submit" value="发送" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

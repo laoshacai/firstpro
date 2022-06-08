@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>博汇购物</title>
+    <link href="/stylesheets/idx.css" rel="stylesheet">
+    <link href="http://at.alicdn.com/t/font_1524886_uvkjm364bi.css" rel="stylesheet">
+    <link href="/stylesheets/pbli.css" rel="stylesheet">
+    <link href="/stylesheets/swiper.mn.css" rel="stylesheet">
+    <script src="/javascripts/jque-3.4.1.js"></script>
+</head>
+
+<body>
+
+
+    <!-- 顶部 -->
+    <header class="header">
+        <!-- 中间 -->
+        <div class="wrap">
+            <!-- 左边 -->
+
+        </div>
+    </header>
+    <div class="right">
+        <ul class="wrap1">
+
+            <li><a href="adminsign"><span class="iconfont icon-ren-copy"></span></a></li>
+            <li><a href="cart"><span class="iconfont icon-gouwuche2"></span><span>购物车<b class="numc">0</b></span></a>
+            </li>
+            <li><a href="history"><span class="iconfont icon-gouwuche2"></span><span>历史订单</span></a></li>
+            <li><a href="chat"><span class="iconfont icon-shouhou1"></span><span>客户服务</span></a></li>
+        </ul>
+    </div>
+
+    <!-- logo 搜索 -->
+    <section class="section1 wrap">
+        <div class="logo">
+            <a href="main"><img src="/images/logo.png"></a>
+        </div>
+        <div class="search">
+            <form action="/main" method="post">
+                <!-- <input type="text" placeholder="请输入你想要搜索的内容" />
+                <input type="submit" value="查询" /> -->
+                <input class="search-input" autofocus=" autofocus" type="text" name="sear" placeholder="请输入你想要搜索的内容">
+                <button id="search-sea">搜索</button>
+                <ul class="search-result"></ul>
+            </form>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <div class="swiper-container-bannerlun">
+        <div class="swiper-wrapper">
+            <!-- <% for(var list of data){ %>
+                <div class="swiper-slide">
+                    <a href="shop"><img src="<%=list.imgone%>"></a>
+                </div>
+                <% } %> -->
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (3).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (4).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (5).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (6).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (7).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (8).jpg"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="shop"><img src="/images/banner-bj (9).jpg"></a>
+            </div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination" id="points"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next btn-right"></div>
+        <div class="swiper-button-prev btn-left"></div>
+    </div>
+
+    </div>
+    </section>
+
+
+    <!-- 抢购列表一 -->
+    <div class="main-tit">—— <b>预售新品列表一</b>——</div>
+    <section class="section3">
+        <ul class="rush-list">
+            <li class="rush-item">
+                <div class="shadow">
+                    <div class="sec3-img">
+                        <a href="shop.html"><img src="/images/4.jpg"></a>
+                    </div>
+                    <div class="info">
+                        <h3 title="小米小爱蓝牙音箱随身版 白色">
+                            小米旅行箱 青春款
+                        </h3>
+                        <p>
+                            环保材料，轻便重量，20英寸 黄色 20寸
+                        </p>
+                        <p><span>
+                                ￥79
+                            </span>
+                        </p>
+
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="rush-item">
+                <div class="shadow">
+                    <div class="sec3-img">
+                        <a href="shop.html"><img src="/images/6.jpg"></a>
+                    </div>
+                    <div class="info">
+                        <h3 title="小米小爱蓝牙音箱随身版 白色">
+                            烟灶套装（天然气）
+                        </h3>
+                        <p>
+                            点火排烟，风随火动
+                        </p>
+                        <p><span>
+                                ￥199
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+
+            <!-- <li class="rush-item">
+                <div class="shadow">
+                    <div class="sec3-img">
+                        <a href="shop.html"><img src="/images/2.png"></a>
+                    </div>
+                    <div class="info">
+                        <h3 title="小米小爱蓝牙音箱随身版 白色">
+                            贝医生0+防蛀健齿牙膏
+                        </h3>
+                        <p>
+                            强健牙釉质，牙齿更坚固
+                        </p>
+                        <p><span>
+                                ￥21
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="rush-item">
+                <div class="shadow">
+                    <div class="sec3-img">
+                        <a href="shop.html"><img src="/images/1.png"></a>
+                    </div>
+                    <div class="info">
+                        <h3 title="小米小爱蓝牙音箱随身版 白色">
+                            小爱播音机
+                        </h3>
+                        <p>
+                            智能声控，音质清晰
+                        </p>
+                        <p><span>
+                                ￥279
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </li> -->
+
+        </ul>
+    </section>
+
+    <!-- 商品列表 -->
+    <div>
+        <div class="main-tit">—— <b>商品列表</b>——</div>
+        <ul class="wrap shopwrap">
+            <% for(var list of data){ %>
+                <li class="main">
+                    <a href="shop.html"><img src="<%=list.image%>"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">
+                            <p>
+                                <%=list.title%>
+                            </p>
+                            <p>
+                                <%=list.detail%>
+                            </p>
+                        </div>
+
+                        <div class="detail-price"><b class="price">￥<%=list.nowprice%></b class="price">
+
+                            <div class="detail-car">
+                                <input type="submit" style="border: none; color: red;" value="加入购物车" />
+
+                            </div>
+                        </div>
+
+                        <div class="detail-price">
+                            <button style="color: red; border: none;" data-id="<%=list.id%>"
+                                class="mod-btnx">详情</button>
+                        </div>
+
+                    </div>
+                </li>
+                <% } %>
+
+                    <!--    
+                <li class="main"><a href="shop.html"><img src="/images/phone5.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">荣耀9X 麒麟810 4000mAh续航 4800万超清夜拍 6.59英寸升降全面屏 全网通6GB+64GB 魅海蓝
+                        </div>
+                        <div class="detail-price"><b class="price">¥1299.00</b class="price">
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main"><a href="shop.html"><img src="/images/phone6.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title"> 荣耀20 李现同款 4800万超广角AI四摄 3200W美颜自拍 麒麟Kirin980全网通版8GB+128GB
+                            幻夜黑 全面屏手机
+                        </div>
+                        <div class="detail-price"><b class="price">¥2099.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+                <li class="main"><a href="shop.html"><img src="/images/phone7.jpg"></a>
+                    <div class="main-detail">
+                        <div class="detail-title">华为 HUAWEI Mate 30 5G 麒麟990
+                            4000万超感光徕卡影像双超级快充8GB+256GB亮黑色5G全网通手机</div>
+                        <div class="detail-price"><b class="price">¥5499.00</b>
+                            <div class="detail-car">加入购物车</div>
+                        </div>
+                    </div>
+                </li>
+               
+             
+            </ul> -->
+    </div>
+
+
+
+
+
+    <!-- 页脚 -->
+    <div class="main-tit">—— <b>END </b>——</div>
+    <footer>
+
+        <ul class="footer-top">
+            <li>
+                <div class="iconfont icon-wuyoushouhou"></div>
+                <div class="footer-top-tit">
+                    <div><a href="shop.html">正品保障</a></div>
+                    <div>正品保障、提供发票</div>
+                </div>
+            </li>
+            <li>
+                <div class="iconfont icon-yunliankeji_gongyinglianfuben"></div>
+                <div class="footer-top-tit">
+                    <div><a href="shop.html">急速物流</a></div>
+                    <div>如约送货、送货入户</div>
+                </div>
+            </li>
+            <li>
+                <div class="iconfont icon-shouhouwuyou"></div>
+                <div class="footer-top-tit">
+                    <div><a href="shop.html">售后无忧</a></div>
+                    <div>30天包退、365天包换</div>
+                </div>
+            </li>
+            <li>
+                <div class="iconfont icon-tesefuwu"></div>
+                <div class="footer-top-tit">
+                    <div><a href="shop.html">特色服务</a></div>
+                    <div>私人订制家电套餐</div>
+                </div>
+            </li>
+            <li>
+                <div class="iconfont icon-bangzhuzhongxin1"></div>
+                <div class="footer-top-tit">
+                    <div><a href="shop.html">帮助中心</a></div>
+                    <div>你的购物指南</div>
+                </div>
+            </li>
+        </ul>
+
+        <!-- <div class="footer-bottom-tit">特色服务</div> -->
+
+
+    </footer>
+    <script src="/javascripts/swiper.mn.js"></script>
+    <script src="/javascripts/idx.js"></script>
+    <style>
+        .copyrights {
+            text-indent: -9999px;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            overflow: hidden;
+        }
+    </style>
+    <div class="copyrights" id="links20210126">
+        Collect from <a href="http://www.cssmoban.com/" title="网站模板">模板之家</a>
+        <a href="https://www.chazidian.com/" title="查字典">查字典</a>
+    </div>
+
+    <script src="/javascripts/j.js"></script>
+    <script src="/javascripts/jquy.js"></script>
+
+
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MultiShop - Online Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="/stylesheets/static/css/css2.css" rel="stylesheet">
+
+    <link href="/stylesheets/static/css/all.min.css" rel="stylesheet">
+
+    <link href="/stylesheets/static/css/animate.min.css" rel="stylesheet">
+    <link href="/stylesheets/static/css/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="/stylesheets/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+        <div class="col-lg-4">
+            <a href="" class="text-decoration-none">
+                <span class="h1 text-uppercase text-primary bg-dark px-2">Shop</span>
+                <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">Detail</span>
+            </a>
+        </div>
+
+
+
+        <div class="container-fluid pb-5">
+            <input type="hidden" name="id" id="providerId" placeholder="322" value="<%=data.id%>" />
+            <div class="row px-xl-5">
+                <div class="col-lg-5 mb-30">
+                    <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner bg-light">
+                            <div class="carousel-item active">
+                                <img class="w-100 h-100" src="<%=data.image%>" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 h-auto mb-30">
+                    <div class="h-100 bg-light p-30">
+                        <h3>
+                            商品id:<%=data.id%>
+                        </h3>
+                        <h3>
+                            <%=data.title%>
+                        </h3>
+                        <p class="mb-4">
+                            <%=data.detail%>
+                        </p>
+
+                        <h3 class="font-weight-semi-bold mb-4">现价：<%=data.nowprice%>
+                        </h3>
+
+                        <div class="d-flex align-items-center mb-4 pt-2">
+                            <button class="btn btn-primary px-3" id="gethash"> GET Hash
+                            </button>
+                            <input type="text" value="<%=data.hash%>">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <script src="/javascripts/web3.min.js"></script>
+            <script src="/javascripts/djquery.js"></script>
+            <script src="/javascripts/billupdate.js"></script>
+
+            <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+
+            <script data-cfasync="false" src="/javascripts/static/js/email-decode.min.js"></script>
+            <script src="/javascripts/static/js/jquery-3.4.1.min.js"
+                type="944f3d13ebc53657447552f7-text/javascript"></script>
+            <script src="/javascripts/static/js/bootstrap.bundle.min.js"
+                type="944f3d13ebc53657447552f7-text/javascript"></script>
+            <script src="/javascripts/static/js/easing.min.js" type="944f3d13ebc53657447552f7-text/javascript"></script>
+            <script src="/javascripts/static/js/owl.carousel.min.js"
+                type="944f3d13ebc53657447552f7-text/javascript"></script>
+
+            <script src="/javascripts/static/js/jqBootstrapValidation.min.js"
+                type="944f3d13ebc53657447552f7-text/javascript"></script>
+            <script src="/javascripts/static/js/contact.js" type="944f3d13ebc53657447552f7-text/javascript"></script>
+
+            <script src="/javascripts/static/js/main.js" type="944f3d13ebc53657447552f7-text/javascript"></script>
+            <script src="/javascripts/static/js/rocket-loader.min.js" data-cf-settings="944f3d13ebc53657447552f7-|49"
+                defer=""></script>
+
+</body>
+<script src="/javascripts/j.js"></script>
+<script src="/javascripts/jquy.js"></script>
+<script>
+    Array.from(document.getElementsByClassName("mod-btnx")).forEach(i => {
+        i.onclick = function () {
+            let idx = this.getAttribute("data-id");
+            window.location.href = '/detail/' + idx;
+        }
+    })
+</script>
+
+</html>
